@@ -1,0 +1,141 @@
+@font-face {
+    font-family: MS;
+    src: url(/Fonte/MS\ Sans\ Serif\ 8pt.ttf);
+}
+
+body {
+    font-family: MS;
+    background-color: #018181;
+}
+
+.windows {
+    display: flex;
+    justify-content: center;
+    transform: translateY(430px);
+}
+
+.errorMessage {
+    min-width: 500px;
+    background-color: #D4D0C8;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    user-select: none;
+}
+
+.errorTitle {
+    width: 99%;
+    padding: 3px;
+    margin-right: 5px;
+    background-color: #0000aa;
+    color: white;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.closeMessage {
+    border-top: #D4D0C8 solid;
+    border-left: #D4D0C8 solid;
+    border-bottom: black solid;
+    border-right: black solid;
+    background-color: #D4D0C8;
+    width: 15px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.closeMessage:active, .confirmMessage:active, .cancelMessage:active {
+    border-style: inset;
+}
+
+.whatIsTheErrorMessage {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.errorIcon {
+    padding: 5px;
+}
+
+.descriptionError {
+    width: 100%;
+    text-align: left;
+}
+
+.optionsError {
+    display: flex;
+    flex-direction: row;
+    margin-left: 44px;
+    margin-bottom: 10px;
+}
+
+.hoverMe {
+    border-radius: 11px;
+    border: black solid;
+    width: 15px;
+    height: 15px;
+    border-top: black solid 1px;
+    border-left: black solid 1px;
+    border-bottom: white solid 1px;
+    border-right: white solid 1px;
+    ;
+    background-color: white;
+    cursor: pointer;
+}
+
+.whatIsThisButton {
+    text-align: center;
+    position: relative;
+
+}
+
+.optionMessage {
+    margin-left: 5px;
+}
+
+.buttonsMessage {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 25px;
+}
+
+.confirmMessage, .cancelMessage {
+    border: #fcf3e3 solid;
+    width: 65px;
+    text-align: center;
+    padding: 1px;
+    background-color: #D4D0C8;
+    border-top: #fcf3e3 2px solid;
+    border-left: #fcf3e3 2px solid;
+    border-bottom: black 3px solid;
+    border-right: black 3px solid;
+    cursor: pointer;
+}
+
+/* Tooltip teste */
+
+.whatIsThisButton .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+    margin-bottom: 2px;
+}
+
+
+.whatIsThisButton:hover .tooltiptext {
+    visibility: visible;
+}
