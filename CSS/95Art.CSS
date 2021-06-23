@@ -8,10 +8,16 @@ body {
     background-color: #018181;
 }
 
+.Container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .windows {
     display: flex;
     justify-content: center;
-    transform: translateY(430px);
 }
 
 .errorMessage {
@@ -24,9 +30,7 @@ body {
 }
 
 .errorTitle {
-    width: 99%;
     padding: 3px;
-    margin-right: 5px;
     background-color: #0000aa;
     color: white;
     font-size: 15px;
@@ -35,9 +39,13 @@ body {
     align-items: center;
 }
 
+.errorFromTitle {
+    padding: 5px;
+}
+
 .closeMessage {
-    border-top: #D4D0C8 solid;
-    border-left: #D4D0C8 solid;
+    border-top: #fcf3e3 solid;
+    border-left: #fcf3e3 solid;
     border-bottom: black solid;
     border-right: black solid;
     background-color: #D4D0C8;
@@ -59,10 +67,11 @@ body {
 
 .errorIcon {
     padding: 5px;
+    width: 34px;
+    height: 34px;
 }
 
 .descriptionError {
-    width: 100%;
     text-align: left;
 }
 
@@ -75,22 +84,17 @@ body {
 
 .hoverMe {
     border-radius: 11px;
-    border: black solid;
     width: 15px;
     height: 15px;
     border-top: black solid 1px;
     border-left: black solid 1px;
     border-bottom: white solid 1px;
     border-right: white solid 1px;
-    ;
     background-color: white;
     cursor: pointer;
-}
-
-.whatIsThisButton {
-    text-align: center;
+    display: flex;
+    justify-content: center;
     position: relative;
-
 }
 
 .optionMessage {
@@ -129,10 +133,7 @@ body {
     padding: 5px 0;
     position: absolute;
     z-index: 1;
-    bottom: 100%;
-    left: 50%;
-    margin-left: -60px;
-    margin-bottom: 2px;
+    transform: translate(-50%, -100%);
 }
 
 
